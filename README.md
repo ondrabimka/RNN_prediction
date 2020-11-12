@@ -18,6 +18,8 @@ This is my main file now. In this case I was trying to predict exact future valu
 To properly create window I followed this very useful tutorial from tensorflow: https://www.tensorflow.org/tutorials/structured_data/time_series. 
 Right now this script contains a lot of very simple models, but so far I have been focusing on (single step) LSTM GRU CNN networks (now I am trying to create bidirectionaly models GRU LSTM).
 
-
+#### Personal observations.
+Generally basic GRU models have better performance on downloaded dataset than simple LSTM models. However, bidirectional models seem to have very similar performance so far.
+Another thing which I found interesting was that when I added dropout performance got much worse. Maybe it is because my models are too small to. Could be worth using it with better models. Another thing that surprised me was that more layers did not always improved performance. 
 
 
