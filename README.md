@@ -19,7 +19,10 @@ To properly create window I followed this very useful tutorial from tensorflow: 
 Right now this script contains a lot of very simple models, but so far I have been focusing on (single step) LSTM GRU CNN networks (now I am trying to create bidirectionaly models GRU LSTM).
 
 #### Personal observations.
+##### For return_sequences=True
 Generally basic GRU models have better performance on downloaded dataset than simple LSTM models. However, bidirectional models seem to have very similar performance so far.
 Another thing which I found interesting was that when I added dropout performance got much worse. Maybe it is because my models are too small to. Could be worth using it with better models. Another thing that surprised me was that more layers did not always improved performance. 
 
+##### For return_sequences=False
+For this settings (on shot prediction) the best result was for basic LSTM and GRU and bidirectional has very similar result, which was a little bit worse than LSTM. 
 
