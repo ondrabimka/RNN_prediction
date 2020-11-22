@@ -26,3 +26,12 @@ Another thing which I found interesting was that when I added dropout performanc
 ##### For return_sequences=False
 For this settings (on shot prediction) the best result was for basic LSTM and GRU and bidirectional has very similar result, which was a little bit worse than LSTM. 
 
+#### Results
+I created new excel table with my models results. There are columns with validation scores and relevant model architecture and compile settings. I took two best looking models (best from single shot models and one from return_sequence = true) and simulated input data to obtain prediction results. Both models were trained only on downloaded data so they had never seen these input data before. 
+
+Result. (marker x = gru - bidirectional, + = gru (normal) - single shot)
+For model which is not single shot model (gru - bidirectional) I took only the last prediction, because it returns an output for each input.
+Code where I created this simulation is in Model_playground.ipynb
+
+![alt text](https://github.com/ondrabimka/RNN_prediction/blob/main/result.png)
+
