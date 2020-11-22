@@ -29,9 +29,11 @@ For this settings (on shot prediction) the best result was for basic LSTM and GR
 #### Results
 I created new excel table with my models results. There are columns with validation scores and relevant model architecture and compile settings. I took two best looking models (best from single shot models and one from return_sequence = true) and simulated input data to obtain prediction results. Both models were trained only on downloaded data so they had never seen these input data before. 
 
-Result. (marker x = gru - bidirectional, + = gru (normal) - single shot)
+Result: 
+(marker x = gru - bidirectional, + = gru (normal) - single shot)
 For model which is not single shot model (gru - bidirectional) I took only the last prediction, because it returns an output for each input.
 Code where I created this simulation is in Model_playground.ipynb
 
+##### Models take 24 mins of data and predict 2 minutes into the future.
 ![alt text](https://github.com/ondrabimka/RNN_prediction/blob/main/result.png)
 
