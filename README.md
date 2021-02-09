@@ -37,3 +37,7 @@ Code where I created this simulation is in Model_playground.ipynb
 ##### Models take 24 mins of data and predict 2 minutes into the future.
 ![alt text](https://github.com/ondrabimka/RNN_prediction/blob/main/result.png)
 
+
+
+### Data_explore.ipynb
+Here I tried to plot and explore various normalizing strategies. 
