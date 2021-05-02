@@ -2,9 +2,9 @@
 
 crypto_data directory contains my datasets. One os those files was downloaded and the others were created using "Crypto_dataset" script.
 
-### Crypto_dataset.ipynb
+### YFinance_data.ipynb
 Using this script I am downloading data from the last week.
-It uses yfinance python library which allows me to download data form stock market into pandas dataframe.
+It uses yfinance python library which allows me to download data form stock market into pandas dataframe. Unfortunatelly when obtaining 1 minute data only 1 week into the past is possible
 
 
 ### Crypto_prediction.ipynb
