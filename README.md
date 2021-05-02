@@ -21,7 +21,7 @@ Right now this script contains a lot of very simple models, but so far I have be
 #### Personal observations.
 ##### For return_sequences=True
 Generally basic GRU models have better performance on downloaded dataset than simple LSTM models. However, bidirectional models seem to have very similar performance so far.
-Another thing which I found interesting was that when I added dropout performance got much worse. Maybe it is because my models are too small to. Could be worth using it with better models. Another thing that surprised me was that more layers did not always improved performance. 
+Another thing which I found interesting was that when I added dropout performance got much worse. Maybe it is because dataset is already too noisy and dropout makes it impossible for model to learn some patterns. Could be worth using it with better models. Another thing that surprised me was that more layers did not always improved performance. 
 
 ##### For return_sequences=False
 For this settings (on shot prediction) the best result was for basic LSTM and GRU and bidirectional has very similar result, which was a little bit worse than LSTM. 
