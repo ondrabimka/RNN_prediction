@@ -41,5 +41,9 @@ Contains plots and comparsion tables used in my work. Plotted data is usually fr
 ##### Example of plot from NN_plots.
 ![image](https://user-images.githubusercontent.com/47148499/127770966-307c4186-7ab9-4a6e-907b-7d1e5ceb0c95.png)
 
+### Models_comparsion.xlsx
+In this file I saved all scores with corresponding architectures and compile settings. (Note: some some scores are empty because for some reason they were not necesary) 
+
+<img width="791" alt="explanation" src="https://user-images.githubusercontent.com/47148499/127777491-4876b314-9780-46a5-9f71-86f7f26d0e56.PNG">
 
 
