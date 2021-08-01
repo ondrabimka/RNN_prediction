@@ -1,43 +1,45 @@
 # RNN_prediction
 
-crypto_data directory contains my datasets. One os those files was downloaded and the others were created using "Crypto_dataset" script.
+crypto_data directory contains some of my datasets. One os those files was downloaded and the others were created using "YFinance_data.ipynb" and "Binance_data.ipynb" script.
 
 ### YFinance_data.ipynb
 Using this script I am downloading data from the last week.
 It uses yfinance python library which allows me to download data form stock market into pandas dataframe. Unfortunatelly when obtaining 1 minute data only 1 week into the past is possible
 
+### Binance_data.ipynb
+This script donwloads all selected pairs from Binance. It is necessay to have a Binance account and with API turned on. For easier communication I used following library https://python-binance.readthedocs.io/en/latest/. 
 
 ### Crypto_prediction.ipynb
 This file contains code for binary prediction -> It predicts if price is going to be higher or lower.
 That file is mostly based on this tutorial: https://pythonprogramming.net/cryptocurrency-recurrent-neural-network-deep-learning-python-tensorflow-keras/. 
 I also used dataset downloaded from there.
 
-
 ### Forecasting.ipynb
 This is my main file now. In this case I was trying to predict exact future value. 
 To properly create window I followed this very useful tutorial from tensorflow: https://www.tensorflow.org/tutorials/structured_data/time_series. 
 Right now this script contains a lot of very simple models, but so far I have been focusing on (single step) LSTM GRU CNN networks (now I am trying to create bidirectionaly models GRU LSTM).
 
-#### Personal observations.
-##### For return_sequences=True
-Generally basic GRU models have better performance on downloaded dataset than simple LSTM models. However, bidirectional models seem to have very similar performance so far.
-Another thing which I found interesting was that when I added dropout performance got much worse. Maybe it is because dataset is already too noisy and dropout makes it impossible for model to learn some patterns. Could be worth using it with better models. Another thing that surprised me was that more layers did not always improved performance. 
-
-##### For return_sequences=False
-For this settings (on shot prediction) the best result was for basic LSTM and GRU and bidirectional has very similar result, which was a little bit worse than LSTM. 
-
-#### Results
-I created new excel table with my models results. There are columns with validation scores and relevant model architecture and compile settings. I took two best looking models (best from single shot models and one from return_sequence = true) and simulated input data to obtain prediction results. Both models were trained only on downloaded data so they had never seen these input data before. 
-
-Result: 
-(marker x = gru - bidirectional, + = gru (normal) - single shot)
-For model which is not single shot model (gru - bidirectional) I took only the last prediction, because it returns an output for each input.
-Code where I created this simulation is in Model_playground.ipynb
-
-##### Models take 24 mins of data and predict 2 minutes into the future.
-![alt text](https://github.com/ondrabimka/RNN_prediction/blob/main/result.png)
-
-
+### Forecasting-big-model.ipynb
+Basically the same file as "Forecasting.ipynb", but here I trained models on more bigger dataset which also included more cryptocurrencies (those were selected based on some data exploration which could be found in "Data_explore.ipynb"). In those bigger models I used 30 minutes to predict 2 minuts into the future.  
 
 ### Data_explore.ipynb
-Here I tried to plot and explore various normalizing strategies. 
+This file contains data exploration of crypto data available on Binance (graphs and info). I tried to create the best dataset from most correlated cryptocurrencies. I also tried to plot and explore various normalising strategies. 
+
+##### Example of correlated and uncorrelated data from Data_explore file.
+![image](https://user-images.githubusercontent.com/47148499/127770334-af230fb0-b7b6-4c2a-bb04-4c1e923b86d0.png)
+
+
+### Model_playground.ipynb
+This file contains visualized predictions, calculated MAE and percantage of correct directions of all models. All scores from this file are included in models_comparsion.xlsx.
+
+##### Example of predictoins made by models from Model_playground file.
+![image](https://user-images.githubusercontent.com/47148499/127770416-08199121-6e56-4e81-83a0-a6907ebfae18.png)
+
+### NN_plots.ipynb
+Contains plots and comparsion tables used in my work. Plotted data is usually from models_comparsion.xlsx.
+
+##### Example of plot from NN_plots.
+![image](https://user-images.githubusercontent.com/47148499/127770966-307c4186-7ab9-4a6e-907b-7d1e5ceb0c95.png)
+
+
+
