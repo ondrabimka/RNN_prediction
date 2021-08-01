@@ -44,6 +44,7 @@ Contains plots and comparsion tables used in my work. Plotted data is usually fr
 ### Models_comparsion.xlsx
 In this file I saved all scores with corresponding architectures and compile settings. (Note: some some scores are empty because for some reason they were not necesary) 
 
-<img width="791" alt="explanation" src="https://user-images.githubusercontent.com/47148499/127777491-4876b314-9780-46a5-9f71-86f7f26d0e56.PNG">
+![model_expl](https://user-images.githubusercontent.com/47148499/127777576-c0c4ecc5-1c92-40de-9567-41960a0fc7dc.png)
+
 
 
