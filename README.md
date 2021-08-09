@@ -33,13 +33,14 @@ This file contains data exploration of crypto data available on Binance (graphs 
 This file contains visualized predictions, calculated MAE and percantage of correct directions of all models. All scores from this file are included in models_comparsion.xlsx.
 
 ##### Example of predictoins made by models from Model_playground file.
-![image](https://user-images.githubusercontent.com/47148499/127770416-08199121-6e56-4e81-83a0-a6907ebfae18.png)
+![image](https://user-images.githubusercontent.com/47148499/128783090-428a246d-0535-4529-a405-1faed63f9def.png)
 
 ### NN_plots.ipynb
 Contains plots and comparsion tables used in my work. Plotted data is usually from models_comparsion.xlsx.
 
 ##### Example of plot from NN_plots.
-![image](https://user-images.githubusercontent.com/47148499/127770966-307c4186-7ab9-4a6e-907b-7d1e5ceb0c95.png)
+![image](https://user-images.githubusercontent.com/47148499/128783111-41f22b57-3ecb-4a71-a64e-66d4fe1a216e.png)
+
 
 ### Models_comparsion.xlsx
 In this file I saved all scores with corresponding architectures and compile settings. (Note: some some scores are empty because for some reason they were not necesary) 
