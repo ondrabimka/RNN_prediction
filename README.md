@@ -20,7 +20,7 @@ To properly create window I followed this very useful tutorial from tensorflow: 
 Right now this script contains a lot of very simple models, but so far I have been focusing on (single step) LSTM GRU CNN networks (now I am trying to create bidirectionaly models GRU LSTM).
 
 ### Forecasting-big-model.ipynb
-Basically the same file as "Forecasting.ipynb", but here I trained models on more bigger dataset which also included more cryptocurrencies (those were selected based on some data exploration which could be found in "Data_explore.ipynb"). In those bigger models I used 30 minutes to predict 2 minuts into the future.  
+Basically the same file as "Forecasting.ipynb", but here I trained models on more bigger dataset which also included more cryptocurrencies (those were selected based on some data exploration which could be found in "Data_explore.ipynb"). In those bigger models I used 30 minutes to predict 1 minute into the future.  
 
 ### Data_explore.ipynb
 This file contains data exploration of crypto data available on Binance (graphs and info). I tried to create the best dataset from most correlated cryptocurrencies. I also tried to plot and explore various normalising strategies. 
